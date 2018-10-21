@@ -29,15 +29,15 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PROBLEM" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aYp-Cp-4dp">
-                                <rect key="frame" x="109" y="100" width="158" height="42"/>
+                                <rect key="frame" x="109" y="144" width="158" height="42"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="35"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3lW-QZ-zzX">
-                                <rect key="frame" x="31" y="235" width="312" height="196"/>
+                                <rect key="frame" x="31" y="279" width="312" height="108"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <string key="text">Small business owners do not have access to the same financial resources as tech startups do  Small businesses create 2 out of every 3 jobs in the US</string>
+                                <mutableString key="text">Small businesses create 2 out of every 3 jobs in the US.  Yet, small business owners do not have access to the same financial resources as tech startups or other companies do.   It is not easy for new businesses to raise funding without working capital or previous credit history</mutableString>
                                 <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
@@ -97,7 +97,7 @@
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gRt-Ee-uji">
                                 <rect key="frame" x="31" y="235" width="312" height="196"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <string key="text">Enable individuals to invest in small businesses  Enable small businesses to show their credit worthiness through borrow history and by linking their personal credit cards</string>
+                                <mutableString key="text">Enable individuals and small business owners to expand their portfolio and businesses by investing in small businesses.  Allow small businesses to use their expertise help other small businesses.  Enable small businesses to raise money through microlending by showing credit worthiness through borrow history and by linking their personal credit cards</mutableString>
                                 <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
@@ -418,7 +418,13 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="fVG-R9-5b5"/>
                     </view>
-                    <navigationItem key="navigationItem" id="BIL-1l-jHx"/>
+                    <navigationItem key="navigationItem" id="BIL-1l-jHx">
+                        <barButtonItem key="rightBarButtonItem" title="Logout" id="NuO-eD-4vQ">
+                            <connections>
+                                <segue destination="2Cg-KW-8fl" kind="show" id="LNH-Kl-OhY"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bB0-0w-eSW" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -759,6 +765,53 @@
             </objects>
             <point key="canvasLocation" x="2380.8000000000002" y="1123.5382308845578"/>
         </scene>
+        <!--View Controller-->
+        <scene sceneID="hLF-fP-Mgf">
+            <objects>
+                <viewController id="2Cg-KW-8fl" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="oIS-7J-OT7">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="NEXT STEPS" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mlp-EU-Pw5">
+                                <rect key="frame" x="138" y="104" width="100" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="mNv-KC-3kh">
+                                <rect key="frame" x="16" y="163" width="343" height="380"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <string key="text">1. Build a forum for business owners to discuss and share tips on raw material sourcing and other important business decisions  2. Standardize interest rates, equity calculations and loan terms  3. Allow reviewing individual portfolio companies and performance  4. Implement a channel for experienced business owners and advisors to mentor new business owners  5. Enable investors to get more involved in businesses by providing resources like marketing, etc.  6. Implement marketplace so businesses in the community can bring business to each other. Smaller businesses might be able to get a better price if they place a bulk order together</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tTF-Aa-hQh">
+                                <rect key="frame" x="120" y="575" width="135" height="30"/>
+                                <state key="normal" title="Restart Onboarding"/>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="show" id="SKl-Ou-PHw"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Mlp-EU-Pw5" firstAttribute="centerX" secondItem="oIS-7J-OT7" secondAttribute="centerX" id="8sX-Tn-R5n"/>
+                            <constraint firstItem="Mlp-EU-Pw5" firstAttribute="top" secondItem="O60-2q-Ltj" secondAttribute="top" constant="40" id="TjL-JB-8A4"/>
+                            <constraint firstItem="mNv-KC-3kh" firstAttribute="leading" secondItem="oIS-7J-OT7" secondAttribute="leadingMargin" id="WAE-qk-xrm"/>
+                            <constraint firstItem="mNv-KC-3kh" firstAttribute="centerX" secondItem="oIS-7J-OT7" secondAttribute="centerX" id="cPV-Y2-e3v"/>
+                            <constraint firstItem="mNv-KC-3kh" firstAttribute="top" secondItem="Mlp-EU-Pw5" secondAttribute="bottom" constant="38" id="pl9-9R-aEo"/>
+                            <constraint firstItem="mNv-KC-3kh" firstAttribute="centerY" secondItem="oIS-7J-OT7" secondAttribute="centerY" constant="19.5" id="sxS-hM-WmB"/>
+                            <constraint firstItem="tTF-Aa-hQh" firstAttribute="top" secondItem="mNv-KC-3kh" secondAttribute="bottom" constant="32" id="tOp-Ba-Ugp"/>
+                            <constraint firstItem="tTF-Aa-hQh" firstAttribute="centerX" secondItem="Mlp-EU-Pw5" secondAttribute="centerX" id="y9u-mv-z5q"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="O60-2q-Ltj"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="amS-3O-dxB" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4060" y="1121.2893553223389"/>
+        </scene>
     </scenes>
     <resources>
         <image name="background1" width="1040" height="1526"/>
@@ -768,4 +821,7 @@
         <image name="icons8-investment-portfolio-30" width="30" height="30"/>
         <image name="icons8-receive-cash-30" width="30" height="30"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="SKl-Ou-PHw"/>
+    </inferredMetricsTieBreakers>
 </document>
